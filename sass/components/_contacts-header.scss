@@ -1,0 +1,32 @@
+.contacts-header {
+    display: flex;
+    margin-left: auto;
+}
+.contacts-header__item {
+    margin-right: 50px;
+    &:nth-child(2n) {
+        margin-right: 0; 
+    }
+}
+.contacts-header__link {
+    display: flex;
+    align-items: center;
+    @include font ($primary-text-family,400,500,14px,1.15,0.02em,$subtitle-text-color);
+    transition: color $time $durarion;
+    &:hover,
+    &:focus {
+        color: $accent-color;
+        &:hover .contacts-header__icon {
+            fill: $accent-color;
+        }
+    }
+}
+.contacts-header__icon {
+    margin-right: 10px;
+    fill: $subtitle-text-color;
+    transition: fill $time $durarion;
+    &:hover,
+    &:focus {
+        fill: $accent-color;
+    }
+}

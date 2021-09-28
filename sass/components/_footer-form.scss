@@ -1,0 +1,8 @@
+.footer-form {
+    margin-left: 93px;
+}
+.footer-form__text {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    @include font ($primary-text-family,normal,700,14px,1.15,0.03em,$title-text-color);
+}

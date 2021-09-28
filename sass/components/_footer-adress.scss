@@ -1,0 +1,22 @@
+.footer-adress {
+    margin-top: 20px;
+}
+.footer-adress__text {
+    margin-bottom: 9px;
+    @include font ($primary-text-family,normal,400,14px,1.71,0.03em,$title-text-color);
+}
+.footer-adress__item {
+    margin-bottom: 9px;
+    display: flex;
+    &:nth-child(2n) {
+        margin-bottom: 0;
+    }
+}
+.footer-adress__link {
+    @include font ($primary-text-family,normal,400,14px,1.70,0.03em,$contacts-acent-footer);
+    transition: color $time $durarion;
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}

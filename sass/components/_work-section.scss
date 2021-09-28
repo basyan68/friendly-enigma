@@ -1,0 +1,33 @@
+.work-section {
+    padding-top: 0;
+}
+.work__title {
+    @include font ($primary-text-family,normal,700,36px,1.15,0.03em,$primary-text-color);
+    text-align: center;
+    margin-bottom: 50px;
+}
+.work__list {
+    display: flex;
+}
+.work__item {
+    margin-right: 30px;
+    &:nth-child(3n) {
+        margin-right: 0;
+    }
+}
+.work__img {
+    position: relative;
+}
+.work__text {
+    @include font ($primary-text-family,normal,700,14px,1.15,0.03em,$title-text-color);
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
