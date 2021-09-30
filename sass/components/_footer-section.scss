@@ -2,13 +2,11 @@
     background-color: $background-color;
     padding-top: 60px;
     padding-bottom: 60px;
-    margin-right: auto;
-    margin-left: auto;
 }
-.footer-conteiner {
-    display: flex;
-    align-items: baseline;
+
+.logo--footer {
+    padding: 0;
 }
-.logo--text-white {
+.logo__text-white-color {
     color: $title-text-color;
 }

@@ -1,15 +1,15 @@
 .advantage__list {  
-    display: flex;
+    display: block;
 }
 .advantage__item {
-    width: 270px;
+    width: 450px;
     margin-right: 30px;
     &:nth-child(4n) {
         margin-right: 0;
     }
 }
 .advantage__icon {
-    width: 270px;
+    width: 450px;
     height: 120px;
     border-radius: 4px;
     background-color: $background-color-team;
@@ -22,6 +22,7 @@
     text-transform: uppercase;
     margin-bottom: 10px;
     @include font ($primary-text-family,normal,bold,14px,1.15,0.03em,$primary-text-color);
+    text-align: center;
 }
 .advantage__text {
     @include font ($primary-text-family,normal,400,14px,1.70,0.03em,$primary-text-color);

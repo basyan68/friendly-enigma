@@ -30,9 +30,7 @@
 }
 .product__before {
     @include font ($primary-text-family,normal,400,18px,1.55,0.03em,$title-text-color);
-    width: 370px;
-    height: 294px;
-    padding: 63px 24px;
+    padding: 77px 24px;
     display: inline-flex;
     position: absolute;
     top: 0;

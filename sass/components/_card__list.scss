@@ -1,16 +1,11 @@
 .card__list {
-    display: flex;
+    display: block;
     flex-wrap: wrap;
 }
 .card__item {
-    width: 370px;
     margin-bottom: 30px;
-    margin-right: 30px;
     background-color: $title-text-color;
-    &:nth-child(3n) {
-        margin-right: 0;
-    }
-    &:nth-last-child(-n+3) {
+    &:nth-last-child(-n+1) {
         margin-bottom: 0;
     }
 }

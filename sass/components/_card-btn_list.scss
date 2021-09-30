@@ -1,12 +1,16 @@
 .card-btn_list {
     display: flex;
-    justify-content: center;
     margin-bottom: 50px;
+    flex-wrap: wrap;
 }
 .card-btn__item {
     margin-right: 8px;
-    &:nth-child(5n) {
+    margin-bottom: 15px;
+    &:nth-child(5) {
         margin-right: 0;
+    }
+    &:nth-last-child(-n +2) {
+        margin-bottom: 0;
     }
 }
 .card-btn__button {
