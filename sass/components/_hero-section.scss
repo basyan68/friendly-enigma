@@ -5,11 +5,10 @@
     background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/img17.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    max-width: 480px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 .hero__title {
-    width: 360px;
     margin-top: 0;
     margin-bottom: 30px;
     margin-left: auto;
@@ -17,5 +16,11 @@
     @include font ($primary-text-family,normal,900,26px,1.60,0.06em,$title-text-color);
     text-transform: uppercase;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    @media screen and (min-width: 768px) {
+        width: 360px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 696px;
+        @include font ($primary-text-family,normal,900,44px,1.35,0.06em,$title-text-color);
+    }
 }
-

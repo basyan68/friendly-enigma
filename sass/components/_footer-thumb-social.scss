@@ -1,8 +1,19 @@
+.footer-thumb-social {
+    @media screen and (min-width: 768px) {
+        display: inline-block;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-left: 70px;
+    }
+}
 .footer-thumb-social__text {
     text-transform: uppercase;
     text-align: center;
     @include font ($primary-text-family,normal,700,14px,1.15,0.03em,$title-text-color);
     margin-bottom: 20px;
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+    }
 }
 .footer-thumb-social__list {
     display: flex;
@@ -10,6 +21,7 @@
     align-items: center;
     padding: 0;
     margin-bottom: 60px;
+    flex-wrap: wrap;
 }
 .footer-thumb-social__item {
     margin-right: 10px;

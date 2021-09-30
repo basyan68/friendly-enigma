@@ -2,16 +2,21 @@
     display: flex;
     margin-bottom: 50px;
     flex-wrap: wrap;
+    @media screen and (min-width: 1200px) {
+        justify-content: center;
+    }
 }
 .card-btn__item {
     margin-right: 8px;
-    margin-bottom: 15px;
     &:nth-child(5) {
         margin-right: 0;
     }
-    &:nth-last-child(-n +2) {
-        margin-bottom: 0;
-    }
+    @media screen and (max-width: 767px){
+        margin-bottom: 15px;
+        &:nth-last-child(-n +2) {
+            margin-bottom: 0;
+        }
+    } 
 }
 .card-btn__button {
     font-weight: 500;

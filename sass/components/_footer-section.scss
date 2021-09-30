@@ -2,8 +2,24 @@
     background-color: $background-color;
     padding-top: 60px;
     padding-bottom: 60px;
+    margin-right: auto;
+    margin-left: auto;
 }
-
+.footer-conteiner {
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
+    }
+}
+.footer__wraper {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: baseline;
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            justify-content: space-around;
+        }
+    }
+}
 .logo--footer {
     padding: 0;
 }

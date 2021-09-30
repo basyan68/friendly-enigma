@@ -5,21 +5,44 @@
     @include font ($primary-text-family,normal,700,28px,1.15,0.03em,$primary-text-color);
     text-align: center;
     margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+        @include font ($primary-text-family,normal,700,36px,1.15,0.03em,$primary-text-color);
+        margin-bottom: 50px;
+    }
 }
 .work-team__list {
-    display: block;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
 }
 .work-team__item {
     background: $title-text-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    margin-bottom: 30px;
-    &:nth-child(4) {
-        margin-bottom: 0;
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        margin: 15px;
+        width: calc((100% - 2 * 30px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+        margin: 15px;
+        width: calc((100% - 4 * 30px) / 4);
     }
 }
 .work-team__card {
     padding: 30px 122px 24px 122px;
+    @media screen and (min-width: 768px) {
+    padding: 30px 74px 24px 74px;
+    }
+    @media screen and (min-width: 1200px) {
+    padding: 30px 32px;
+    }
 }
 .work-team__subtitle {
     @include font ($primary-text-family,normal,500,16px,1.20,0.03em,$primary-text-color);

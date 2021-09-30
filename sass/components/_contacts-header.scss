@@ -1,11 +1,25 @@
 .contacts-header {
     display: none;
-    margin-left: auto;
+    @media screen and (min-width: 768px) {
+        display: inline-flex;
+        margin-left: auto;
+        flex-direction: column;
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            flex-direction: inherit;
+        }
+    }
 }
 .contacts-header__item {
-    margin-right: 50px;
-    &:nth-child(2n) {
-        margin-right: 0; 
+    @media screen and (max-width: 1199px) {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        &:nth-child(1) {
+            margin-right: 50px;
+        }
     }
 }
 .contacts-header__link {

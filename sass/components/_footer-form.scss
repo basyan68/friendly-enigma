@@ -1,6 +1,15 @@
+.footer-form {
+    margin-left: 93px;
+}
 .footer-form__text {
     text-transform: uppercase;
     text-align: center;
     @include font ($primary-text-family,normal,700,14px,1.15,0.03em,$title-text-color);
     margin-bottom: 20px;
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+    }
 }
+
+
+

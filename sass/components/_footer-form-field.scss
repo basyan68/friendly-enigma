@@ -1,5 +1,12 @@
 .footer-form-field {
-    display: block;
+    @media screen and (max-width: 1199px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
 }
 .footer-form-field__input {
     display: inline-block;
@@ -12,19 +19,26 @@
     padding: 15px 15px;
     background-color: transparent;
     color: $title-text-color;
-    margin-bottom: 20px;
     &::placeholder {
         font-size: 16px;
         line-height: 1.25;
         color: rgba(255, 255, 255, 0.6);
+    }
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 20px;
+    }
+    @media screen and (min-width: 768px) {
+        width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+        margin-right: 12px;
     }
 }
 .footer-form-field_button--padding {
     padding: 10px 29px;
     align-items: center;
     display: flex;
-    margin-right: auto;
-    margin-left: auto;
 }
 .footer-form-button__icon {
     font-weight: bold;

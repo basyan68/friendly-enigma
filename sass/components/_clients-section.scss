@@ -1,24 +1,32 @@
 .clients__title {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     @include font ($primary-text-family,normal,700,28px,1.15,0.03em,$primary-text-color);
+    @media screen and (min-width: 1200px) {
+        @include font ($primary-text-family,normal,700,36px,1.15,0.03em,$primary-text-color);
+        margin-bottom: 50px;
+    }
 }
 .clients__list {
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    @media screen and (min-width: 480px) {
+        margin: -15px;
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 .clients__item {
-    display: flex;
-    
-    &:nth-child(6) {
-
+    @media screen and (min-width: 480px) {
+        margin: 15px;
+        width: calc((100% - 2 * 30px) / 2);
+    }
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 3 * 30px) / 3);
+    }
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 6 * 30px) / 6);
     }
 }
 .clients__link {
-    width: 210px;
     height: 92px;
     border: 1px solid $item-icon-clients;
     box-sizing: border-box;
