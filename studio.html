@@ -18,6 +18,12 @@
                 <a class="logo link" href="./studio.html">
                     <span class="logo__text--blue-color">Web</span><span class="logo__text--black-color">Studio</span>
                 </a>
+                <button class="header-nav__button js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-button>
+                    <svg width="24" height="16" aria-label="Переключатель мобильного меню">
+                        <use class="header-nav__icon" href="./images/mobile-menu-icons.svg#icon-menu_24px">
+                        </use>
+                    </svg>
+                </button>
                 <ul class="header-nav__list list">
                     <li class="header-nav__item">
                         <a class="header-nav__link link header-nav__link--active" href="./studio.html">
@@ -435,6 +441,65 @@
             </div>
         </div>    
     </footer>
+    <div class="conteiner header-mobile-menu-container  js-menu-container" id="mobile-menu">
+        <button type="button" class="header-mobile-menu__button js-close-menu">
+            <svg width="19" height="19">
+                <use class="header-mobile-menu__icon" href="./images/mobile-menu-icons.svg#icon-close_24px">
+                </use>
+            </svg>
+        </button>
+        <ul class="header-mobile-menu__list list">
+            <li class="header-mobile-menu__item item">
+                <a class="header-mobile-menu__link link" href="">
+                    Студия
+                </a>
+            </li>
+            <li class="header-mobile-menu__item item">
+                <a class="header-mobile-menu__link link" href="">
+                    Портфолио
+                </a>
+            </li>
+            <li class="header-mobile-menu__item item">
+                <a class="header-mobile-menu__link link" href="">
+                    Контакты
+                </a>
+            </li>
+        </ul>
+        <ul class="header-mobile-contacts list">
+            <li class="header-mobile-contacts__item  item">
+                <a class="header-mobile-contacts__link header-mobile-contacts__link--big-size link" href="">
+                    +38 096 111 11 11
+                </a>
+            </li>
+            <li class="header-mobile-contacts__item item">
+                <a class="header-mobile-contacts__link link" href="">
+                    info@devstudio.com
+                </a>
+            </li>
+        </ul>
+        <ul class="header-mobile-social list">
+            <li class="header-mobile-social__item item">
+                <a class="header-mobile-social__link link" href="">
+                    Instagram
+                </a>
+            </li>
+            <li class="header-mobile-social__item item">
+                <a class="header-mobile-social__link link" href="">
+                    Twitter
+                </a>
+            </li>
+            <li class="header-mobile-social__item item">
+                <a class="header-mobile-social__link link" href="">
+                    Facebook
+                </a>
+            </li>
+            <li class="header-mobile-social__item item">
+                <a class="header-mobile-social__link link" href="">
+                    LinkedIn
+                </a>
+            </li>
+        </ul>
+    </div>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <form class="modal-form">
@@ -482,6 +547,7 @@
             </div>
         </div>
     </div>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>

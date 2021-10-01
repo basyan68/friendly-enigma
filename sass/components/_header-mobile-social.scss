@@ -1,0 +1,11 @@
+.header-mobile-social {
+    display: flex;
+}
+.header-mobile-social__item {
+    &:not(:last-child) {
+        margin-right: 20px;
+    }
+}
+.header-mobile-social__link {
+    @include font ($primary-text-family,400,500,18px,1.22,0.02em,$accent-color);
+}

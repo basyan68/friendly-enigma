@@ -1,5 +1,7 @@
 .footer-form {
-    margin-left: 93px;
+    @media screen and (min-width: 1200px) {
+        margin-left: 93px;
+    }
 }
 .footer-form__text {
     text-transform: uppercase;

@@ -1,8 +1,36 @@
 .header-nav {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
     @media screen and (min-width: 768px) {
         display: inline-flex;
         align-items: center;
     }
+}
+.header-nav__button {
+    display: none;
+    @media screen and (max-width: 767px) {
+        display: inline-flex;
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        & .header-nav__icon-close {
+            display: none;
+        }
+        &.is-open .header-nav__icon-close {
+            display: block;
+        }
+        &.is-open .header-nav__icon-menu {
+            display: none;
+        }
+        &:hover .header-nav__icon {
+            fill: $accent-color;
+        }
+    }
+}
+.header-nav__icon {
+    transition: fill $time $durarion; 
 }
 .header-nav__list {
     display: none;
