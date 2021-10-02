@@ -2,19 +2,27 @@
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
-    @media screen and (min-width: 768px) {
+    @include mq('tablet') {
         display: inline-flex;
         align-items: center;
     }
 }
 .header-nav__button {
     display: none;
-    @media screen and (max-width: 767px) {
+    @include mqq('tablet') {
         display: inline-flex;
         margin: 0;
         padding: 0;
         background-color: transparent;
         border: none;
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         & .header-nav__icon-close {
             display: none;
         }
@@ -34,11 +42,11 @@
 }
 .header-nav__list {
     display: none;
-    @media screen and (min-width: 768px) {
+    @include mq('tablet') {
         display: flex;
         margin-left: 88px;
     }
-    @media screen and (min-width: 1200px) {
+    @include mq('desktop') {
         margin-left: 93px;
     }
 }
@@ -65,13 +73,11 @@
 .header-nav__link--active {
     color: $accent-color;
     &::after {
-        content: "";
-        display: inline-block;
+        @include pseudo;
         width: 100%;
         height: 4px;
         background-color: $accent-color;
         border-radius: 2px;
-        position: absolute;
         bottom: 0;
         right: 0;
     }

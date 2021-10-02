@@ -7,11 +7,11 @@
     }
 }
 .advantage__item {
-    @media screen and (min-width: 768px) {
+    @include mq('tablet') {
         margin: 15px;
         width: calc((100% - 2 * 30px) / 2);
         }
-        @media screen and (min-width: 1200px) {
+        @include mq('desktop') {
             margin: 15px;
             width: calc((100% - 4 * 30px) / 4);
             }
@@ -30,7 +30,7 @@
     margin-bottom: 10px;
     @include font ($primary-text-family,normal,bold,14px,1.15,0.03em,$primary-text-color);
     text-align: center;
-    @media screen and (min-width: 768px) {
+    @include mq('tablet') {
         text-align: start;
         }
 }

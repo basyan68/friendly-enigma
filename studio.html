@@ -122,19 +122,31 @@
                 <ul class="work__list list">
                     <li class="work__item">
                         <div class="work__img">
-                            <img src="./images/img.jpg" width="370" height="294" alt="печатает человек">
+                            <img srcset="
+                            ./images/desktop1x.jpg 1x,
+                            ./images/desktop2x.jpg 2x,
+                            ./images/desktop3x.jpg 3x
+                            " src="./images/img.jpg" width="370" height="294" alt="печатает человек">
                             <p class="work__text">Десктопные приложения</p>
                         </div>
                     </li>
                     <li class="work__item">
                         <div class="work__img">
-                            <img src="./images/img2.jpg" width="370" height="294" alt="телефон и ноутбук">
+                            <img srcset="
+                            ./images/mobile1x.jpg 1x,
+                            ./images/mobile2x.jpg 2x,
+                            ./images/mobile3x.jpg 3x
+                            " src="./images/img2.jpg" width="370" height="294" alt="телефон и ноутбук">
                             <p class="work__text">Мобильные приложения</p>
                         </div>
                     </li>
                     <li class="work__item">
                         <div class="work__img">
-                            <img src="./images/img3.jpg" width="370" height="294" alt="планшет">
+                            <img srcset="
+                            ./images/design1x.jpg 1x,
+                            ./images/design2x.jpg 2x,
+                            ./images/design3x.jpg 3x
+                            " src="./images/img3.jpg" width="370" height="294" alt="планшет">
                             <p class="work__text">Дизайнерские решения</p>
                         </div>
                     </li>
@@ -146,7 +158,13 @@
                 <h2 class="work-team__title">Наша команда</h2>
                 <ul class="work-team__list list">
                     <li class="work-team__item">
-                        <img src="./images/img4.jpg" width="270" height="260" alt="игорь">
+                        <img srcset="
+                        ./images/igor1x.jpg   270w,
+                        ./images/igor2x.jpg   540w,
+                        ./images/igor3x.jpg  810w
+                        "
+                        src="./images/img4.jpg" alt="игорь" 
+                        sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (min-width: 576px) 100vw, 100vw">
                         <div class="work-team__card">
                             <h3 class="work-team__subtitle">Игорь Демьяненко</h3> 
                             <p class="work-team__text">Product Designer</p>
@@ -187,7 +205,12 @@
                         </div>
                     </li>
                     <li class="work-team__item">
-                        <img src="./images/img5.jpg" width="270" height="260" alt="ольга">
+                        <img srcset="
+                        ./images/olga1x.jpg   270w,
+                        ./images/olga2x.jpg   540w,
+                        ./images/olga3x.jpg  810w
+                        " src="./images/img5.jpg" alt="ольга"
+                        sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (min-width: 576px) 100vw, 100vw">
                         <div class="work-team__card">
                             <h3 class="work-team__subtitle">Ольга Репина</h3>
                             <p class="work-team__text">Frontend Developer</p>
@@ -228,7 +251,12 @@
                         </div>
                     </li>
                     <li class="work-team__item">
-                        <img src="./images/img6.jpg" width="270" height="260" alt="николай"> 
+                        <img srcset="
+                        ./images/nikolay1x.jpg   270w,
+                        ./images/nikolay2x.jpg   540w,
+                        ./images/nikolay3x.jpg  810w
+                        " src="./images/img6.jpg" alt="николай"
+                        sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (min-width: 576px) 100vw, 100vw"> 
                             <div class="work-team__card">
                                 <h3 class="work-team__subtitle">Николай Тарасов</h3>
                                 <p class="work-team__text">Marketing</p>
@@ -269,7 +297,12 @@
                             </div>
                     </li>
                     <li class="work-team__item">
-                        <img src="./images/img7.jpg" width="270" height="260" alt="михаил"> 
+                        <img srcset="
+                        ./images/mihail1x.jpg   270w,
+                        ./images/mihail2x.jpg   540w,
+                        ./images/mihail3x.jpg  810w
+                        " src="./images/img7.jpg"  alt="михаил"
+                        sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (min-width: 576px) 100vw, 100vw"> 
                             <div class="work-team__card">
                                 <h3 class="work-team__subtitle">Михаил Ермаков</h3> 
                                 <p class="work-team__text">UI Designer</p>
@@ -450,12 +483,12 @@
         </button>
         <ul class="header-mobile-menu__list list">
             <li class="header-mobile-menu__item item">
-                <a class="header-mobile-menu__link link" href="">
+                <a class="header-mobile-menu__link link" href="./studio.html">
                     Студия
                 </a>
             </li>
             <li class="header-mobile-menu__item item">
-                <a class="header-mobile-menu__link link" href="">
+                <a class="header-mobile-menu__link link" href="./portfolio.html">
                     Портфолио
                 </a>
             </li>
@@ -467,12 +500,12 @@
         </ul>
         <ul class="header-mobile-contacts list">
             <li class="header-mobile-contacts__item  item">
-                <a class="header-mobile-contacts__link header-mobile-contacts__link--big-size link" href="">
+                <a class="header-mobile-contacts__link header-mobile-contacts__link--big-size link" href="tel:+380961111111">
                     +38 096 111 11 11
                 </a>
             </li>
             <li class="header-mobile-contacts__item item">
-                <a class="header-mobile-contacts__link link" href="">
+                <a class="header-mobile-contacts__link link" href="mailto:info@devstudio.com">
                     info@devstudio.com
                 </a>
             </li>

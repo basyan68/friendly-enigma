@@ -1,9 +1,9 @@
 .footer-adress__wrapper {
     text-align: center;
-    @media screen and (min-width: 768px) {
+    @include mq('tablet') {
         display: inline-block;
     }
-    @media screen and (min-width: 1200px) {
+    @include mq('desktop') {
         text-align: start;
     }
 }
@@ -12,18 +12,18 @@
 }
 .footer-adress__text {
     @include font ($primary-text-family,normal,400,14px,1.71,0.03em,$title-text-color);
-    @media screen and (min-width: 480px) {
+    @include mq('mobile') {
         margin-bottom: 9px;
     }
 }
 .footer-adress__list {
-    @media screen and (max-width: 1199px) {
+    @include mqq('desktop') {
         margin-bottom: 60px;
     }
 }
 .footer-adress__item {
     display: block;
-    @media screen and (min-width: 480px)  {
+    @include mq('mobile')  {
         display: flex;
         justify-content: center;
         margin-bottom: 9px;
@@ -32,7 +32,7 @@
             margin-bottom: 0;
         }
     }
-    @media screen and (min-width: 1200px) {
+    @include mq('desktop') {
         justify-content: start;
     }
     

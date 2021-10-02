@@ -1,6 +1,6 @@
 .header-section {
     border-bottom: 1px solid $header-border-color;
-    @media screen and (max-width: 767px) {
+    @include mqq('tablet') {
         height: 60px;
         display: flex;
     align-items: center;

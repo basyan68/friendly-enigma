@@ -10,7 +10,7 @@
 
     transform: translate(-50%, -50%) scale(1);
     transition: transform $time $durarion;
-    @media screen and (max-width: 1199px) {
+    @include mqq('desktop') {
         min-width: 450px;
         min-height: 609px;
     }

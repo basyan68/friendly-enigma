@@ -20,7 +20,7 @@
     align-items: center;
     user-select: none;
     @include font ($primary-text-family,normal,400,14px,1.70,0.03em,$subtitle-text-color);
-    @media screen and (max-width: 1199px) {
+    @include mqq ('desktop') {
         @include font ($primary-text-family,normal,400,12px,1.15,0.03em,$subtitle-text-color);
     }
     transition: color $time $durarion;
@@ -46,7 +46,7 @@
     @include font ($primary-text-family,normal,400,14px,1.70,0.03em,$accent-color);
     text-decoration-line: underline;
     display: inline;
-    @media screen and (max-width: 1199px) {
+    @include mqq ('desktop') {
         @include font ($primary-text-family,normal,400,12px,1.15,0.03em,$accent-color);
     }
 }

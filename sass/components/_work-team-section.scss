@@ -5,13 +5,13 @@
     @include font ($primary-text-family,normal,700,28px,1.15,0.03em,$primary-text-color);
     text-align: center;
     margin-bottom: 30px;
-    @media screen and (min-width: 1200px) {
+    @include mq('desktop') {
         @include font ($primary-text-family,normal,700,36px,1.15,0.03em,$primary-text-color);
         margin-bottom: 50px;
     }
 }
 .work-team__list {
-    @media screen and (min-width: 768px) {
+    @include mq('tablet') {
         display: flex;
         flex-wrap: wrap;
         margin: -15px;
@@ -26,21 +26,21 @@
             margin-bottom: 30px;
         }
     }
-    @media screen and (min-width: 768px) {
+    @include mq('tablet') {
         margin: 15px;
         width: calc((100% - 2 * 30px) / 2);
     }
-    @media screen and (min-width: 1200px) {
+    @include mq('desktop') {
         margin: 15px;
         width: calc((100% - 4 * 30px) / 4);
     }
 }
 .work-team__card {
     padding: 30px 122px 24px 122px;
-    @media screen and (min-width: 768px) {
+    @include mq('tablet') {
     padding: 30px 74px 24px 74px;
     }
-    @media screen and (min-width: 1200px) {
+    @include mq('desktop') {
     padding: 30px 32px;
     }
 }

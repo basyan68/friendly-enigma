@@ -1,6 +1,6 @@
 .card__list {
     display: block;
-    @media screen and (min-width: 768px) {
+    @include mq('tablet') {
         display: flex;
         flex-wrap: wrap;
         margin: -15px;
@@ -8,16 +8,16 @@
 }
 .card__item {
     background-color: $title-text-color;
-    @media screen and (max-width: 767px) {
+    @include mqq('tablet') {
         &:not(:last-child) {
             margin-bottom: 30px;
         }
     }
-    @media screen and (min-width: 768px) {
+    @include mq('tablet') {
         margin: 15px;
         width: calc((100% - 2 * 30px) / 2);
     }
-    @media screen and (min-width: 1200px) {
+    @include mq('desktop') {
         margin: 15px;
         width: calc((100% - 3 * 30px) / 3);
     }

@@ -1,14 +1,14 @@
 .logo__text--blue-color {
     @include font ($subprimary-text-family,normal,700,24px,1.15,0.03em,$accent-color);
     display: inline-block;
-    @media screen and (min-width: 1200px) {
+    @include mq('desktop') {
         @include font ($subprimary-text-family,normal,700,26px,1.2,0.03em,$accent-color);
     }
 }
 .logo__text--black-color {
     display: inline-block;
     @include font ($subprimary-text-family,normal,700,24px,1.15,0.03em,$primary-text-color);
-    @media screen and (min-width: 1200px) {
+    @include mq('desktop') {
         @include font ($subprimary-text-family,normal,700,26px,1.2,0.03em,$primary-text-color);
     }
 }

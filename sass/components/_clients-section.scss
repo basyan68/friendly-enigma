@@ -2,27 +2,23 @@
     text-align: center;
     margin-bottom: 30px;
     @include font ($primary-text-family,normal,700,28px,1.15,0.03em,$primary-text-color);
-    @media screen and (min-width: 1200px) {
+    @include mq('desktop') {
         @include font ($primary-text-family,normal,700,36px,1.15,0.03em,$primary-text-color);
         margin-bottom: 50px;
     }
 }
 .clients__list {
-    @media screen and (min-width: 480px) {
-        margin: -15px;
-        display: flex;
-        flex-wrap: wrap;
-    }
+    margin: -15px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .clients__item {
-    @media screen and (min-width: 480px) {
-        margin: 15px;
-        width: calc((100% - 2 * 30px) / 2);
-    }
-    @media screen and (min-width: 768px) {
+    margin: 15px;
+    width: calc((100% - 2 * 30px) / 2);
+    @include mq('tablet') {
         width: calc((100% - 3 * 30px) / 3);
     }
-    @media screen and (min-width: 1200px) {
+    @include mq('desktop') {
         width: calc((100% - 6 * 30px) / 6);
     }
 }
