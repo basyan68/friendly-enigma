@@ -9,8 +9,4 @@
 .header-mobile-social__link {
     transition: color $time $durarion;
     @include font ($primary-text-family,400,500,18px,1.22,0.02em,$accent-color);
-    &:hover,
-    &:focus {
-        color: $hover-menu-social;
-    }
 }

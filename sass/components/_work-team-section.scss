@@ -36,7 +36,10 @@
     }
 }
 .work-team__card {
-    padding: 30px 122px 24px 122px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
     @include mq('tablet') {
     padding: 30px 74px 24px 74px;
     }

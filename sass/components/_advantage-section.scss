@@ -35,5 +35,5 @@
         }
 }
 .advantage__text {
-    @include font ($primary-text-family,normal,400,14px,1.70,0.03em,$primary-text-color);
+    @include font ($primary-text-family,normal,400,14px,1.70,0.03em,$subtitle-text-color);
 }

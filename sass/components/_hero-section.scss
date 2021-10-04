@@ -7,6 +7,7 @@
     background-repeat: no-repeat;
     background-position: center;
     margin: 0 auto;
+    
     @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
@@ -43,6 +44,9 @@
             screen and (min-resolution: 2dppx) {
             background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/hero-img-768-2x.jpg);
         }
+    }
+    @include mq('desktop') {
+        max-width: 1600px;
     }
 }
 .hero__title {

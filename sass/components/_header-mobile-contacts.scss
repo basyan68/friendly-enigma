@@ -1,5 +1,4 @@
 .header-mobile-contacts {
-    margin-bottom: 64px;
 }
 .header-mobile-contacts__item {
     &:nth-child(1) {
@@ -9,17 +8,17 @@
 .header-mobile-contacts__link {
     display: flex;
     align-items: center;
-    @include font ($primary-text-family,400,500,24px,1.15,0.02em,$accent-color);
+    @include font ($primary-text-family,400,500,24px,1.15,0.02em,$subtitle-text-color);
     transition: color $time $durarion;
     &:hover,
     &:focus {
-        color: $hover-menu-social;
+        color: $accent-color;
     }
 }
 .header-mobile-contacts__link--big-size {
-    @include font ($primary-text-family,400,500,34px,1.17,0.02em,$accent-color);
+    @include font ($primary-text-family,400,500,34px,1.17,0.02em,$subtitle-text-color);
     &:hover,
     &:focus {
-        color: $hover-menu-social;
+        color: $accent-color;
     }
 }
