@@ -7,22 +7,21 @@
         align-items: center;
     }
 }
+.header-nav__wrapper {
+    display: flex;
+    align-items: center;
+    @include mqq('tablet') {
+        width: 480px;
+    }
+}
 .header-nav__button {
     display: none;
     @include mqq('tablet') {
+        margin-left: auto;
         display: inline-flex;
-        margin: 0;
         padding: 0;
         background-color: transparent;
         border: none;
-        position: absolute;
-        top: 10px;
-        right: 15px;
-        width: 40px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         & .header-nav__icon-close {
             display: none;
         }
@@ -82,4 +81,5 @@
         right: 0;
     }
 }
+
 
