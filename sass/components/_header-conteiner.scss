@@ -12,4 +12,7 @@
     @include mq('desktop') {
         width: 1200px;
     }
+    @media screen and (max-width: 479px) {
+        width: 100%;
+    }
 }

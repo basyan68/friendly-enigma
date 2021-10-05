@@ -12,10 +12,11 @@
     transition: transform $time $durarion;
     @include mqq('desktop') {
         min-width: 450px;
-        min-height: 609px;
+        max-height: 581px;
     }
     @media screen and  (max-width: 450px) {
         min-width: 100vw;
+        max-height: 100vh;
     }
 }
 .modal__svg {

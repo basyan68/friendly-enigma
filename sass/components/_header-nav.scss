@@ -2,17 +2,20 @@
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
-    @include mq('tablet') {
-        display: inline-flex;
-        align-items: center;
+    @media screen and (max-width: 479px) {
+        width: 100%;
     }
 }
 .header-nav__wrapper {
     display: flex;
+    margin: 0px auto;
+    padding-right: 15px;
     align-items: center;
+    
     @include mqq('tablet') {
         width: 480px;
     }
+    
 }
 .header-nav__button {
     display: none;

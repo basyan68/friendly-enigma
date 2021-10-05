@@ -126,6 +126,12 @@ img {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .header-conteiner {
+    width: 100%;
+  }
+}
+
 .logo__text--blue-color {
   font-family: Raleway, sansans-serif;
   font-style: normal;
@@ -209,14 +215,9 @@ img {
           justify-content: space-between;
 }
 
-@media only screen and (min-width: 767px) {
+@media screen and (max-width: 479px) {
   .header-nav {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    width: 100%;
   }
 }
 
@@ -224,6 +225,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0px auto;
+  padding-right: 15px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1262,13 +1265,14 @@ img {
 @media only screen and (max-width: 1199px) {
   .modal {
     min-width: 450px;
-    min-height: 609px;
+    max-height: 581px;
   }
 }
 
 @media screen and (max-width: 450px) {
   .modal {
     min-width: 100vw;
+    max-height: 100vh;
   }
 }
 
