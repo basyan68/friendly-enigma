@@ -8,6 +8,7 @@
 }
 .card__item {
     background-color: $title-text-color;
+    display: flex;
     @include mqq('tablet') {
         &:not(:last-child) {
             margin-bottom: 30px;

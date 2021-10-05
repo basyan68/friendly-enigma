@@ -1,7 +1,9 @@
 .product__link {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
     transition: box-shadow $time $durarion;
+    height: 100%;
     &:hover,
     &:focus {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -28,10 +30,10 @@
 }
 .product__before {
     @include font ($primary-text-family,normal,400,18px,1.55,0.03em,$title-text-color);
-    padding: 77px 24px;
+    padding: 0px 24px;
     display: inline-flex;
     position: absolute;
-    top: 0;
+    top: 50%;
     opacity: 0;
     transform: translateY(100%);
     transition: opacity $time $durarion, 
@@ -39,7 +41,13 @@
     .product__link:hover &,
     .product__link:focus & {
         opacity: 1;
-        transform: translateY(0);
+        transform: translate(0%, -50%);
+    }
+    @include mq('tablet') {
+        padding: 49px 24px;
+    }
+    @include mq('desktop') {
+        padding: 63px 24px;
     }
 }
 .product__meta {
@@ -50,6 +58,9 @@
     border-bottom: 1px solid $card-portfolio;
     border-left: 1px solid $card-portfolio;
     border-right: 1px solid $card-portfolio;
+    flex-grow: 1;
+    display: block
+    
 }
 .product__title {
     @include font ($primary-text-family,normal,700,18px,2,0.06em,$primary-text-color);
@@ -59,8 +70,4 @@
     @include font ($primary-text-family,normal,400,16px,1.85,0.03em,$subtitle-text-color);
 
 }
-.product__meta--padding {
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        padding-bottom: 56px;
-    }
-}
+
