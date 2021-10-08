@@ -9,7 +9,7 @@
 .header-mobile-social__link {
     transition: color $time $durarion;
     @include font ($primary-text-family,400,500,18px,1.22,0.02em,$accent-color);
-    @media screen and (max-width: 420px) {
-        @include font ($primary-text-family,400,500,12px,1.22,0.02em,$accent-color);
+    @media screen and (max-width: 396px) {
+        @include font ($primary-text-family,400,500,4vw,1.22,0.02em,$accent-color);
     }
 }

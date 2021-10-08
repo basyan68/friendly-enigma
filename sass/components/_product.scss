@@ -49,6 +49,9 @@
     @include mq('desktop') {
         padding: 63px 24px;
     }
+    @media screen and (max-width: 424px) {
+        @include font ($primary-text-family,normal,400,3.7vw,1.55,0.03em,$title-text-color);
+    }
 }
 .product__meta {
     padding-top: 20px;

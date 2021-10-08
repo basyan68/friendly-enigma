@@ -1520,7 +1520,7 @@ img {
       flex-wrap: wrap;
 }
 
-@media only screen and (min-width: 1199px) {
+@media only screen and (min-width: 767px) {
   .card-btn_list {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1707,6 +1707,18 @@ img {
   }
 }
 
+@media screen and (max-width: 424px) {
+  .product__before {
+    font-family: Roboto, sansans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.7vw;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+  }
+}
+
 .product__meta {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -1882,12 +1894,12 @@ img {
   color: #2196F3;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 396px) {
   .header-mobile-contacts__link--big-size {
     font-family: Roboto, sansans-serif;
     font-style: 400;
     font-weight: 500;
-    font-size: 27px;
+    font-size: 9vw;
     line-height: 1.15;
     letter-spacing: 0.02em;
     color: #757575;
@@ -1916,12 +1928,12 @@ img {
   color: #2196F3;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 396px) {
   .header-mobile-social__link {
     font-family: Roboto, sansans-serif;
     font-style: 400;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 4vw;
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: #2196F3;

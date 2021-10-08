@@ -21,7 +21,7 @@
     &:focus {
         color: $accent-color;
     }
-    @media screen and (max-width: 420px) {
-        @include font ($primary-text-family,400,500,27px,1.15,0.02em,$subtitle-text-color);
+    @media screen and (max-width: 396px) {
+        @include font ($primary-text-family,400,500,9vw,1.15,0.02em,$subtitle-text-color);
     }
 }
