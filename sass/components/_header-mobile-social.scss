@@ -2,6 +2,15 @@
     display: flex;
 }
 .header-mobile-social__item {
+    position: relative;
+    &:not(:last-child)::after {
+        content: '';
+        border-right: 1px solid rgba(33,33,33,0.2);
+        position: absolute;
+        top: 0;
+        right: -11px;
+        height: 100%;
+    }
     &:not(:last-child) {
         margin-right: 20px;
     }
